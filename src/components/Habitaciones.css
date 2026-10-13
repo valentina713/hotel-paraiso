@@ -1,0 +1,71 @@
+#habitaciones {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+#habitaciones h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+#habitaciones .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#habitaciones .card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+#habitaciones .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+#habitaciones .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+#habitaciones .card-text {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+#habitaciones .card .fw-bold {
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#habitaciones .btn {
+  background-color: #344C5C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  align-self: flex-start;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#habitaciones .btn:hover {
+  background-color: #1a2a35;
+  color: white;
+}
+
+#habitaciones .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
