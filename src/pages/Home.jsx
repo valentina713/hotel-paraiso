@@ -8,7 +8,7 @@ import Contacto from '../components/Contacto'
 import Footer from '../components/Footer'
 import LoginModal from '../components/LoginModal' 
 
-function Home (onLogin) {
+function Home ({ onLogin }) {
 const [mostrarLogin, setMostrarLogin] = useState(false) 
   return (
     <>
@@ -22,6 +22,7 @@ const [mostrarLogin, setMostrarLogin] = useState(false)
       <LoginModal 
       mostrar= {mostrarLogin}
       cerrar={() => setMostrarLogin (false)}
+      onLogin={onLogin} 
       />
     </>
   )

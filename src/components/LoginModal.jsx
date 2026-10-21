@@ -1,6 +1,7 @@
 import { useState } from "react";
+import 
  
-function LoginModal({ mostrar, cerrar }) {
+function LoginModal({ mostrar, cerrar, onLogin }) { 
   const [correo, setCorreo] = useState("");
   const [password, setPassword] = useState("");
  
@@ -9,13 +10,26 @@ function LoginModal({ mostrar, cerrar }) {
   const iniciarSesion = (e) => {
     e.preventDefault();
  
-    if (!correo || !password) {
-      alert("Complete todos los campos");
-      return;
+    if (correo.trim() || "admin@hotel.com" && 
+    password === "12345") {
+      Swal.fire ({
+        icon:"success",
+        title:"Bienvenid@",
+        text:"Sesión iniciada correctamente",
+        confirmButtonText:""
+
+      })
+    } else {
+      Swal. frie ({
+        icon:"error",
+        title:"Acceso denegado",
+        text:"El correo o contraseña son incorrectos",
+        confirmButtonText:"Intentar nuevamente",
+        confirmButtonColor:"344c4c"
+      })
+      alert("Correo o contraseña incorrectos");
     }
- 
-    alert("Formulario enviado correctamente");
-    cerrar();
+
   };
  
   return (
